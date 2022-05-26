@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Menu001"
+        android:icon="@android:drawable/star_big_on"
+        android:title="Item"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/Menu002"
+        android:title="Abrir"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/Menu003"
+                    android:title="Título" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/MenuCambiar"
+        android:title="Configuración" />
+</menu>
